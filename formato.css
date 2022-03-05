@@ -66,6 +66,19 @@ section{
     margin: 0 10%;
 }
 
+.encargo{
+    background-color: #f4263e65;
+    border-radius: 20px;
+    
+}
+.encargo div{
+    display: inline-flex;
+    justify-content: center;
+    margin: 1% 10%;
+}
+.negritas{
+    font-weight: bold;
+}
 
 #BarraHTML {
     background-color: #FF6A00;
@@ -212,32 +225,49 @@ section{
 .formulario input{
     border-radius: 5px;
 }
+.formulario p{
+    margin: 0 15%;
+}
+
+
+.estilo{
+    background-color: #33A502;
+    margin: 15px;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.estilo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.estilo label{
+    color: white;
+}
+
+.formulario{
+    margin: 5%;
+}
+
+.fotos{
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0% 15%;
+}
 
 .formulario input[type=checkbox], .formulario input[type=radio]{
     cursor: pointer;
 }
 
 
-/*Cambiar el color a los checkbox*/
-.formulario input[type=checkbox]:nth-child(3):checked{
-    filter: hue-rotate(180deg);
-}
-.formulario input[type=checkbox]:nth-child(6):checked{
-    filter: hue-rotate(3333deg);
-}
-.formulario input[type=checkbox]:nth-child(9):checked{
-    filter: hue-rotate(220deg);
-}
-.formulario input[type=checkbox]:nth-child(12):checked{
-    filter: hue-rotate(30deg);
-}
-.formulario input[type=checkbox]:nth-child(15):checked{
-    filter: hue-rotate(150deg);
-}
-
 
 .formulario div{
-    margin: 0% 10%;
+/*    margin: 0% 10%;*/
 }
 
 /*Funciones del mapa*/

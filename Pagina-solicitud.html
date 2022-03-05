@@ -36,58 +36,91 @@
         <form class="formulario" action="accion.js" id="forma1" method="post">
 
             <h2 class="letraVerde">Seleccione la forma</h2>
-            <div>
-                <input type="radio" name="forma" id="casa">
-                <label for="casa">Taiyaki de la casa (+$20)</label><br>
-                <input type="radio" name="forma" id="doraemon">
-                <label for="doraemon">Taiyaki Doraemon (+$30)</label><br>
-                <input type="radio" name="forma" id="kitty">
-                <label for="kitty">Taiyaki Hello Kitty (+$30)</label><br>
-                <input type="radio" name="forma" id="meowth">
-                <label for="meowth">Taiyaki Meowth (+$30)</label><br>
-                <input type="radio" name="forma" id="magikarp">
-                <label for="magikarp">Taiyaki Magikarp (+$30)</label><br>
-                <input type="radio" name="forma" id="original">
-                <label for="original">Taiyaki Original (+$25)</label><br>
-            </div>
+            <div class="fotos">
+                <div class="estilo">
+                    <img src="./assets/logo-taiyaki.png" alt="" ><br>
+                    <input type="radio" name="forma" id="casa">
+                    <label for="casa">Taiyaki de la casa (+$20)</label>
+                </div>
+                <div class="estilo">
+                    <img src="./assets/doraemon-taiyaki.jpg" alt=""><br>
+                    <input type="radio" name="forma" id="doraemon">
+                    <label for="doraemon">Taiyaki Doraemon (+$30)</label>
+                </div>
+                <div class="estilo">
+                    <img src="./assets/hello-kitty-taiyaki.jpg" alt=""><br>
+                    <input type="radio" name="forma" id="kitty">
+                    <label for="kitty">Taiyaki Hello Kitty (+$30)</label>
+                </div>
+                <div class="estilo">
+                    <img src="./assets/meow-taiyaki.png" alt=""><br>
+                    <input type="radio" name="forma" id="meowth">
+                    <label for="meowth">Taiyaki Meowth (+$30)</label>
+                </div>
+                <div class="estilo">
+                    <img src="./assets/magikarp-taiyaki.JPG" alt=""><br>
+                    <input type="radio" name="forma" id="magikarp">
+                    <label for="magikarp">Taiyaki Magikarp (+$30)</label>
+                </div>
+                <div class="estilo">
+                    <img src="./assets/original_taiyaki.png" alt=""><br>
+                    <input type="radio" name="forma" id="original">
+                    <label for="original">Taiyaki Original (+$25)</label>
+                </div>
+        </div>
             
             <h2 class="letraVerde">Seleccione el sabor</h2> <br>
-            <div>
-                <p>1 sabor (+$0), 2 sabores (+$5), 3 sabores (+$8)</p><br>
+            <p class="negritas">1 sabor (+$0), 2 sabores (+$5), 3 sabores (+$8)</p><br>
+            <div class="fotos">
                 <!--Chocolate-->
-                <input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
-                <label for="chocolate">Chocolate</label><br>
+                <div class="estilo">
+                    <img src="./assets/chocolate.jpg" alt=""><br>
+                    <input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
+                    <label for="chocolate">Chocolate</label>
+                </div>
                 <!--Fresa-->
-                <input type="checkbox" id="fresa" name="fresa" value="fresa">
-                <label for="fresa">Fresa</label><br>
+                <div class="estilo">
+                    <img src="./assets/fresas.JPG" alt=""><br>
+                    <input type="checkbox" id="fresa" name="fresa" value="fresa">
+                    <label for="fresa">Fresa</label>
+                </div>
                 <!--Vainilla-->
-                <input type="checkbox" id="vainilla" name="vainilla" value="vainilla">
-                <label for="vainilla">Vainilla</label><br>
+                <div class="estilo">
+                    <img src="./assets/vainilla.jpg" alt=""><br>
+                    <input type="checkbox" id="vainilla" name="vainilla" value="vainilla">
+                    <label for="vainilla">Vainilla</label>
+                </div>
                 <!--Mora Azul-->
-                <input type="checkbox" id="moraAzul" name="moraAzul" value="moraAzul">
-                <label for="moraAzul">Mora azul</label><br>
+                <div class="estilo">
+                    <img src="./assets/moraAzul.jpeg" alt=""><br>
+                    <input type="checkbox" id="moraAzul" name="moraAzul" value="moraAzul">
+                    <label for="moraAzul">Mora azul</label><br>
+                </div>
                 <!--Anko-->
-                <input type="checkbox" id="tradicional" name="tradicional" value="Tradicional">
-                <label for="tradicional">Anko (frijol dulce)</label><br>
+                <div class="estilo">
+                    <img src="./assets/anko.jpg" alt=""><br>
+                    <input type="checkbox" id="tradicional" name="tradicional" value="Tradicional">
+                    <label for="tradicional">Anko (frijol dulce)</label><br>
+                </div>
             </div>
             
                 
             <h2 class="letraVerde">Datos de contacto</h2>
 
-            <div>
+            <div style="margin: 0 15%;">
                 <label for="nombre">Nombre completo</label><br>
                 <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Martinez Velazquez" autocomplete="on"><br>
                 <label for="numero">Número telefónico</label><br>
                 <input type="tel" maxlength="10" id="numero" name="numero" placeholder="Ej: 6561234567" autocomplete="on"><br>
                 <label for="email">Correo electrónico</label><br>
                 <input type="email" id="email" name="email" placeholder="Ej: ejemplo@correo.com" autocomplete="on"><br>
-                <label for="fecha">Fecha de entrega deseada</label><br>
-                <input type="date" id="fecha" name="fecha" placeholder=""><br>
+                <label for="fecha">Hora de entrega deseada</label><br>
+                <input type="time" id="hora" name="hora" placeholder="" min="9:00" max="19:00" value="12:00"><br>
             </div>    
                 
             <h2 class="letraVerde">Datos de pago</h2>
 
-            <div>
+            <div style="margin: 0 15%;">
                 <label for="nombreTarjeta">Nombre del titular</label><br>
                 <input type="text" id="nombreTarjeta" name="nombreTarjeta" placeholder="Ej: Juan Martinez Velazquez" autocomplete="cc-name"><br>
                 <label for="nTarjeta">Número de la tarjeta</label><br>
@@ -98,7 +131,7 @@
                 <input type="text" id="securityNumber" name="securityNumber" min="0" maxlength="3" placeholder="3 dígitos" autocomplete="cc-csc"><br>
             </div>
             <br>
-            <div>
+            <div style="margin: 0 15%;">
                 <input type="reset">
                 <input type="submit"><br><br>
             </div>
