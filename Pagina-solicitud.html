@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" href="formato.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="docs/flickity.css" media="screen">
+        <title>Nekoyaki</title>
+    </head>
+    <body>
+
+
+
+
+
+
+<!------------------------Header------------------------->    
+        <header id="encabezado">
+            <img id="logo1" src="./assets/nekoyaki_logo.png" alt="Logo de nekoyaki">
+        </header>
+        <nav id="BarraHTML" style="background-color: #33A502;">
+            <h1>Haz tu pedido</h1>
+            <ul>
+                <li id="B_Home"><div class="grow"><a href="./Pagina_1.html">Home</a></div></li>
+                <li id="B_Que"><div class="grow"><a href="Que_Es.html">¿Qué es el nekoyaki?</a></div></li>
+                <li id="B_Estilos"><div class="grow"><a href="Estilos-1.html">Estilos y sabores</a></div></li>
+                <li id="B_Pedido"><div class="grow"><a href="Pagina-solicitud.html">Hacer un pedido</a></div></li>
+                <li id="B_Contacto"><div class="grow"><a href="Contacto.html">Contacto</a></div></li>
+            </ul>
+        </nav>
+        <!--Solicitud-->
+
+        <h1>Solicitud de taiyaki</h1>        
+        <form class="formulario" action="accion.js" id="forma1" method="post">
+
+            <h2 class="letraVerde">Seleccione la forma</h2>
+            <div>
+                <input type="radio" name="forma" id="casa">
+                <label for="casa">Taiyaki de la casa (+$20)</label><br>
+                <input type="radio" name="forma" id="doraemon">
+                <label for="doraemon">Taiyaki Doraemon (+$30)</label><br>
+                <input type="radio" name="forma" id="kitty">
+                <label for="kitty">Taiyaki Hello Kitty (+$30)</label><br>
+                <input type="radio" name="forma" id="meowth">
+                <label for="meowth">Taiyaki Meowth (+$30)</label><br>
+                <input type="radio" name="forma" id="magikarp">
+                <label for="magikarp">Taiyaki Magikarp (+$30)</label><br>
+                <input type="radio" name="forma" id="original">
+                <label for="original">Taiyaki Original (+$25)</label><br>
+            </div>
+            
+            <h2 class="letraVerde">Seleccione el sabor</h2> <br>
+            <div>
+                <p>1 sabor (+$0), 2 sabores (+$5), 3 sabores (+$8)</p><br>
+                <!--Chocolate-->
+                <input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
+                <label for="chocolate">Chocolate</label><br>
+                <!--Fresa-->
+                <input type="checkbox" id="fresa" name="fresa" value="fresa">
+                <label for="fresa">Fresa</label><br>
+                <!--Vainilla-->
+                <input type="checkbox" id="vainilla" name="vainilla" value="vainilla">
+                <label for="vainilla">Vainilla</label><br>
+                <!--Mora Azul-->
+                <input type="checkbox" id="moraAzul" name="moraAzul" value="moraAzul">
+                <label for="moraAzul">Mora azul</label><br>
+                <!--Anko-->
+                <input type="checkbox" id="tradicional" name="tradicional" value="Tradicional">
+                <label for="tradicional">Anko (frijol dulce)</label><br>
+            </div>
+            
+                
+            <h2 class="letraVerde">Datos de contacto</h2>
+
+            <div>
+                <label for="nombre">Nombre completo</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Martinez Velazquez" autocomplete="on"><br>
+                <label for="numero">Número telefónico</label><br>
+                <input type="tel" maxlength="10" id="numero" name="numero" placeholder="Ej: 6561234567" autocomplete="on"><br>
+                <label for="email">Correo electrónico</label><br>
+                <input type="email" id="email" name="email" placeholder="Ej: ejemplo@correo.com" autocomplete="on"><br>
+                <label for="fecha">Fecha de entrega deseada</label><br>
+                <input type="date" id="fecha" name="fecha" placeholder=""><br>
+            </div>    
+                
+            <h2 class="letraVerde">Datos de pago</h2>
+
+            <div>
+                <label for="nombreTarjeta">Nombre del titular</label><br>
+                <input type="text" id="nombreTarjeta" name="nombreTarjeta" placeholder="Ej: Juan Martinez Velazquez" autocomplete="cc-name"><br>
+                <label for="nTarjeta">Número de la tarjeta</label><br>
+                <input type="text" id="nTarjeta" name="nTarjeta" placeholder="1234-5678-9012-3456" autocomplete="cc-number"><br>
+                <label for="nombre">Fecha de expiración</label><br>
+                <input type="month" id="mesEx" name="mesEx"><br>
+                <label for="securityNumber">Código de seguridad</label><br>
+                <input type="text" id="securityNumber" name="securityNumber" min="0" maxlength="3" placeholder="3 dígitos" autocomplete="cc-csc"><br>
+            </div>
+            <br>
+            <div>
+                <input type="reset">
+                <input type="submit"><br><br>
+            </div>
+
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!----------------------------------------Barra Inferior------------------------------------------>
+        <footer id="BarraInferior" style="background-color: #33A502;">
+            <h1 align="left">Contacto</h1><br><br>
+            <p>Estamos localizados a 5 min del parque central.
+                <br>
+                <i class="material-icons">place</i>3337 Av. Tecnológico, <br> 
+                   Cd. Juárez, Chih, 32000 <br>
+                   <i class="material-icons">call</i>(656)123-4567 <br>
+                info@nekoyaki.com
+                
+             </p>
+        </footer>
+
+
+
+
+    </body>
+</html>
